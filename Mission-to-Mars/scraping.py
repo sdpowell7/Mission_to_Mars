@@ -115,8 +115,9 @@ def hemispheres(browser):
         hemisphere['url'] = browser.find_by_text('Sample')['href']
         browser.back()
         hemispheres.append(hemisphere)
-    return hemispheres
 
+    return hemispheres
+    browser.quit()
 
 if __name__ == "__main__":
 
